@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Explore Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><i class="fa-solid fa-mountain"></i> Explore Nepal</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html" ><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="contact.html" ><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>world’s highest peaks.</h1>
+        <p>Walk ancient temple squares, trek beneath the Himalayas, and spot rhinos in the jungle. Start planning your journey to Nepal.</p>
+        <a href="contact.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Plan my trip</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Where to go</h2>
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="trek"><i class="fa-solid fa-person-hiking"></i> Trekking</button>
+        <button class="chip" data-filter="culture"><i class="fa-solid fa-vihara"></i> Culture</button>
+        <button class="chip" data-filter="nature"><i class="fa-solid fa-tree"></i> Nature</button>
+      </div>
+      <div class="grid" id="destGrid">
+        <article class="card c1" data-cat="culture"><i class="fa-solid fa-vihara"></i><h3>Kathmandu</h3><p>Seven UNESCO World Heritage Sites sit inside the valley, from Pashupatinath to Boudhanath stupa and Durbar Square.</p><span class="tag">Best: Oct to Nov</span></article>
+        <article class="card c2" data-cat="nature"><i class="fa-solid fa-water"></i><h3>Pokhara</h3><p>A lakeside town under the Annapurna range. Go boating on Phewa Lake or paraglide over the valley.</p><span class="tag">Best: Sep to May</span></article>
+        <article class="card c3" data-cat="nature"><i class="fa-solid fa-paw"></i><h3>Chitwan National Park</h3><p>Jungle safaris to see one-horned rhinoceros, Bengal tigers and over 500 bird species.</p><span class="tag">Best: Oct to Mar</span></article>
+        <article class="card c4" data-cat="culture"><i class="fa-solid fa-dharmachakra"></i><h3>Lumbini</h3><p>The birthplace of Gautama Buddha, with the Maya Devi Temple and monasteries built by countries around the world.</p><span class="tag">Best: Nov to Feb</span></article>
+        <article class="card c5" data-cat="trek"><i class="fa-solid fa-mountain"></i><h3>Everest Base Camp</h3><p>A 12 to 14 day trek through Sherpa villages to the foot of Earth’s highest mountain, at 5,364 m.</p><span class="tag">Best: Mar to May</span></article>
+        <article class="card c6" data-cat="trek"><i class="fa-solid fa-person-hiking"></i><h3>Annapurna Circuit</h3><p>A classic trek crossing Thorong La pass at 5,416 m, with changing landscapes from rice terraces to high desert.</p><span class="tag">Best: Oct to Nov</span></article>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="facts">
+       
+        <div><i class="fa-solid fa-utensils"></i><h3>Home of the Himalayas</h3><p>Eight of the 10 tallest mountains in the world.</p></div>
+      
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Explore Nepal.</p>
+    <p class="social"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

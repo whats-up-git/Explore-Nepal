@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Explore Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><i class="fa-solid fa-mountain"></i> Explore Nepal</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" ><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html" ><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section contact">
+      <h1>Contact Us</h1>
+      <p>Tell us where you want to go and when. We will reply with route ideas.</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com">
+        <label for="interest">I am interested in</label>
+        <select id="interest"><option>Trekking</option><option>Culture and heritage</option><option>Wildlife and nature</option><option>Not sure yet</option></select>
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Travel dates, group size, questions"></textarea>
+        <p class="error" id="formError" role="alert"></p>
+        <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+      </form>
+      <p class="success" id="formStatus" role="status"></p>
+      <p class="info"><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal &nbsp; <i class="fa-solid fa-phone"></i> +977 9845795818 &nbsp; <i class="fa-solid fa-envelope"></i> hello@explorenepal.example</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Explore Nepal.</p>
+    <p class="social"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+:root{--ink:#1b2a41;--snow:#f7f9fb;--crimson:#b3202f;--gold:#e8a317;--sky:#dce8f2;--text:#2b3340}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',sans-serif;line-height:1.65;color:var(--text);background:var(--snow)}
+h1,h2,h3,.logo{font-family:'Fraunces',serif;color:var(--ink);line-height:1.2}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* Navbar (Flexbox) */
+.navbar{display:flex;justify-content:space-between;align-items:center;background:var(--ink);padding:.9rem 2rem;position:sticky;top:0;z-index:10}
+.logo{color:#fff;font-size:1.4rem;text-decoration:none}
+.logo i{color:var(--gold)}
+.nav-links{display:flex;gap:1rem;list-style:none}
+.nav-links a{color:#fff;text-decoration:none;padding:.5rem .9rem;border-radius:6px;transition:background .2s}
+.nav-links a:hover{background:rgba(255,255,255,.15)}
+.nav-links a.active{background:var(--crimson)}
+.menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;background:linear-gradient(90deg,rgba(27,42,65,.75),rgba(27,42,65,.15)),url("../images/himal.jpg") center/cover no-repeat;min-height:70vh;display:flex;align-items:center;overflow:hidden}
+.hero-text{position:relative;z-index:2;max-width:640px;padding:3rem 2rem 3rem 8vw;color:#fff}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:1rem}
+.hero p{font-size:1.15rem;margin-bottom:1.5rem}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);font-weight:600;font-size:1rem;border:none;padding:.8rem 1.5rem;border-radius:6px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#f5b82e}
+
+/* Sections */
+.section{max-width:1100px;margin:0 auto;padding:3rem 1.5rem}
+.section h2,.section h1{margin-bottom:1rem;font-size:2rem}
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem}
+.chip{background:#fff;border:2px solid var(--ink);color:var(--ink);padding:.4rem 1rem;border-radius:999px;cursor:pointer;font:inherit}
+.chip.active{background:var(--ink);color:#fff}
+
+/* Cards (Grid) */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.card{background:#fff;border-top:6px solid var(--crimson);padding:1.5rem;border-radius:4px;box-shadow:0 2px 8px rgba(27,42,65,.12)}
+.card.c2,.card.c5{border-top-color:var(--ink)}
+.card.c3,.card.c6{border-top-color:var(--gold)}
+.card>i{font-size:2rem;color:var(--crimson);margin-bottom:.6rem}
+.card h3{margin-bottom:.5rem}
+.card p{text-align:justify;margin-bottom:.8rem}
+.tag{font-size:.9rem;font-weight:600;color:var(--ink);background:var(--sky);padding:.2rem .6rem;border-radius:4px}
+.card.hidden{display:none}
+
+/* Facts band */
+.band{background:var(--sky);padding:3rem 1.5rem}
+.facts{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+.facts i{font-size:1.8rem;color:var(--crimson);margin-bottom:.5rem}
+.facts p{text-align:justify}
+
+/* About (Flexbox) */
+.about{display:flex;gap:2.5rem;align-items:center}
+.about-art{flex:0 0 35%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--ink),var(--crimson));color:#fff;font-size:6rem;border-radius:8px}
+.about p{text-align:justify;margin-bottom:1rem}
+
+/* Contact */
+.contact{max-width:640px}
+.contact form{display:flex;flex-direction:column;gap:.5rem;margin:1.5rem 0}
+.contact label{font-weight:600;color:var(--ink)}
+.contact input,.contact select,.contact textarea{padding:.7rem;border:1px solid #9aa5b1;border-radius:6px;font:inherit;margin-bottom:.5rem}
+.error{color:var(--crimson);font-weight:600}
+.success{color:#1d6b3a;font-weight:600}
+.info{margin-top:1.5rem}
+.info i{color:var(--crimson)}
+
+footer{background:var(--ink);color:#fff;text-align:center;padding:1.5rem}
+.social{margin-top:.5rem;font-size:1.4rem;display:flex;justify-content:center;gap:1rem}
+
+@media(max-width:700px){
+  .menu-toggle{display:block}
+  .navbar{flex-wrap:wrap}
+  .nav-links{display:none;flex-direction:column;width:100%;margin-top:.8rem}
+  .nav-links.open{display:flex}
+  .about{flex-direction:column}
+  .about-art{flex:none;width:100%;aspect-ratio:2}
+  .hero-text{padding:2rem 1.5rem}
+}
